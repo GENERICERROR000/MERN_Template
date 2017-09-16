@@ -10,7 +10,7 @@ class Navbar extends Component {
         <li><a href='/'><h3>HOME</h3></a></li>
         <li><a href='#'><h3>AAA</h3></a></li>
         <li><a href='#'><h3>BBB</h3></a></li>
-        <li><a href='#'><h3>CCC</h3></a></li>
+        <li><a href='#'><h3>CCCC</h3></a></li>
       </ul>
     )
   }
