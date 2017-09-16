@@ -1,5 +1,8 @@
 const Example = require('../models/Issue')
 
+// TODO: Change to reflect model attributes
+
+
 exports.updateExample = (req, res) => {
   const issueID = req.body.issueID,
     notes = req.body.updatedIssueParts.notes || null,
