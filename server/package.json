@@ -1,0 +1,19 @@
+{
+  "name": "MERN_Template",
+  "version": "1.0.0",
+  "description": "Template for MERN stack apps",
+  "main": "server.js",
+  "repository": "git@github.com:nkernis/MERN_Template.git",
+  "author": "<nkernis> <<nkernis@gmail.com>>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "^0.0.3",
+    "body-parser": "^1.17.2",
+    "cors": "^2.8.4",
+    "express": "^4.15.3",
+    "http": "^0.0.0",
+    "jsonwebtoken": "^7.4.1",
+    "mongoose": "^4.11.3",
+    "morgan": "^1.8.2"
+  }
+}
