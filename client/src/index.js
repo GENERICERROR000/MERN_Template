@@ -5,11 +5,10 @@ import { Provider } from 'react-redux'
 import reduxThunk from 'redux-thunk'
 import axios from 'axios'
 import { composeWithDevTools } from 'redux-devtools-extension'
-import App from './containers/app'
+import App from './containers/App'
 import registerServiceWorker from './registerServiceWorker'
 import reducers from './reducers/index'
 import { AUTH_USER } from './actions/action_types'
-import './css/index.css'
 
 const middleware = composeWithDevTools(applyMiddleware(reduxThunk))
 const store = createStore(reducers, middleware)

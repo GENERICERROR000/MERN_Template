@@ -1,37 +1,17 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Button, Menu } from 'semantic-ui-react'
 import { Link } from 'react-router-dom'
-import logo from '../media/logo.png'
-import '../css/navbar.css'
 
 class Navbar extends Component {
-  renderLinks () {
-    if (this.props.authenticated) {
-      return (
-        <Menu.Item position='right'>
-          <Link to='/portal'><Button className="nav-button">Portal</Button></Link>
-          <Link to='/signout'><Button className="nav-button">Sign Out</Button></Link>
-        </Menu.Item>
-      )
-    } else {
-      return (
-        <Menu.Item position='right'>
-          <Link to='/signin'><Button className="nav-button">Sign In </Button></Link>
-          <Link to='/signup'><Button className="nav-button">Sign Up</Button></Link>
-        </Menu.Item>
-      )
-    }
-  }
 
   render () {
     return (
-      <Menu className="navbar" secondary>
-        <Menu.Item fitted>
-          <Link to='/'><img className="logo" alt="logo" src={logo} /></Link>
-        </Menu.Item>
-        {this.renderLinks()}
-      </Menu>
+      <ul id="nav-ul">
+        <li><a href='/'><h3>HOME</h3></a></li>
+        <li><a href='#'><h3>AAA</h3></a></li>
+        <li><a href='#'><h3>BBB</h3></a></li>
+        <li><a href='#'><h3>CCC</h3></a></li>
+      </ul>
     )
   }
 }
